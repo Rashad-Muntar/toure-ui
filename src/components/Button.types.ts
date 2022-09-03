@@ -5,5 +5,5 @@ export interface ButtonProps{
     primary?: boolean
     disable?: boolean
     size?: "small" | "medium" | "large"
-    onCLick?: MouseEventHandler<HTMLButtonElement>
+    onClick?: MouseEventHandler<HTMLButtonElement>
 }
