@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { ButtonProps } from "./Button.types";
 
-const styledButton = styled.button<ButtonProps>`
+const StyledButton = styled.button<ButtonProps>`
   border: 0;
   line-height: 1;
   font-size: 15px;
@@ -34,6 +34,10 @@ const styledButton = styled.button<ButtonProps>`
 
 const Button = () => {
     return (
-        
+        <StyledButton type="Button" onClick={onClick} primary={primary} disable={disable} size={size} text={text}>
+
+        </StyledButton>
     )
 }
+
+export default Button
