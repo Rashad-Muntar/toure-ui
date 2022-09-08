@@ -34,7 +34,7 @@ const StyledButton = styled.button<ButtonProps>`
 
 const Button = ({onClick, primary, disable, size, text, ...props}: ButtonProps) => {
     return (
-        <StyledButton type="Button" onClick={onClick} primary={primary} disable={disable} size={size}>
+        <StyledButton  onClick={onClick} primary={primary} disable={disable} size={size}>
             {text}
         </StyledButton>
     )
