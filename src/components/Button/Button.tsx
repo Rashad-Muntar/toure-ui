@@ -32,10 +32,10 @@ const StyledButton = styled.button<ButtonProps>`
 
 `;
 
-const Button = () => {
+const Button = ({onClick, primary, disable, size, text, ...props}: ButtonProps) => {
     return (
-        <StyledButton type="Button" onClick={onClick} primary={primary} disable={disable} size={size} text={text}>
-
+        <StyledButton  onClick={onClick} primary={primary} disable={disable} size={size}>
+            {text}
         </StyledButton>
     )
 }
