@@ -1,8 +1,9 @@
-interface WrapperProps {
+import { ReactNode } from "react"
+
+export interface WrapProps {
     maxW: 'sm' | 'large' | 'xlarge'
     border?: string
     borderR?: 'sm' | 'large' | 'xlarge'
-    overflow?: 'hidden' | "show"
+    overflow?: 'hide' | "show"
+    children: ReactNode
 }
-
-export default WrapperProps
